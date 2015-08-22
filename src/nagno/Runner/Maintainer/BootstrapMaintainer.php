@@ -61,7 +61,8 @@ class BootstrapMaintainer implements MaintainerInterface
     public function bootstrapMage2()
     {
         if (is_null($this->bootstrap)) {
-            Bootstrap::create(BP, $_SERVER);
+            $bootstrap = Bootstrap::create(BP, $_SERVER);
+            $bootstrap->getObjectManager();
             $this->bootstrap = true;
         }
     }
