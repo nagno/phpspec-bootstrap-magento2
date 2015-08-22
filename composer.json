@@ -1,0 +1,23 @@
+{
+    "name": "nagno/phpspec-bootstrap-magento2",
+    "description": "Bootstraps Mage2 for phpspec before the tests are running so the dinamically generated classes will work",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Norbert Nagy",
+            "email": "norbert.nagy@sessiondigital.com"
+        }
+    ],
+    "require": {
+        "phpspec/phpspec": "~2.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Nagno\\Phpspec\\BootstrapMagento2\\": "src/nagno"
+        }
+    },
+    "config": {
+        "bin-dir": "bin"
+    },
+    "minimum-stability": "stable"
+}
