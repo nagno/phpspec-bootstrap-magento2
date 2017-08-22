@@ -2,15 +2,15 @@
 
 namespace Nagno\Phpspec\BootstrapMagento2;
 
-use PhpSpec\Extension\ExtensionInterface;
+use PhpSpec\Extension;
 use PhpSpec\ServiceContainer;
 
-class Bootstrap implements ExtensionInterface
+class Bootstrap implements Extension
 {
-    public function load(ServiceContainer $container)
+    public function load(ServiceContainer $container, array $params)
     {
-        $container->set('runner.maintainers.initialise_magento_object_factory', function ($c) {
+        $container->define('runner.maintainers.initialise_magento_object_factory', function () {
             return new Runner\Maintainer\BootstrapMaintainer();
-        });
+        }, ['runner.maintainers']);
     }
 }

@@ -2,14 +2,14 @@
 
 namespace Nagno\Phpspec\BootstrapMagento2\Runner\Maintainer;
 
-use PhpSpec\Runner\Maintainer\MaintainerInterface;
+use PhpSpec\Runner\Maintainer\Maintainer;
 use PhpSpec\Loader\Node\ExampleNode;
-use PhpSpec\SpecificationInterface;
+use PhpSpec\Specification;
 use PhpSpec\Runner\MatcherManager;
 use PhpSpec\Runner\CollaboratorManager;
 use Magento\Framework\App\Bootstrap;
 
-class BootstrapMaintainer implements MaintainerInterface
+class BootstrapMaintainer implements Maintainer
 {
     /**
      * @var Bootstrap
@@ -19,7 +19,7 @@ class BootstrapMaintainer implements MaintainerInterface
     /**
      * {@inheritdoc}
      */
-    public function supports(ExampleNode $example)
+    public function supports(ExampleNode $example): bool
     {
         return true;
     }
@@ -29,7 +29,7 @@ class BootstrapMaintainer implements MaintainerInterface
      */
     public function prepare(
         ExampleNode $example,
-        SpecificationInterface $context,
+        Specification $context,
         MatcherManager $matchers,
         CollaboratorManager $collaborators
     ) {
@@ -41,7 +41,7 @@ class BootstrapMaintainer implements MaintainerInterface
      */
     public function teardown(
         ExampleNode $example,
-        SpecificationInterface $context,
+        Specification $context,
         MatcherManager $matchers,
         CollaboratorManager $collaborators
     ) {
@@ -50,7 +50,7 @@ class BootstrapMaintainer implements MaintainerInterface
     /**
      * {@inheritdoc}
      */
-    public function getPriority()
+    public function getPriority(): int
     {
         return 500;
     }
