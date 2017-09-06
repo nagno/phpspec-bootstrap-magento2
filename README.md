@@ -1,3 +1,6 @@
+#Compatibility
+You need at least Magento 2.2 to use this version of the tool. 
+
 # Purpose of the tools
 This tool bootstraps Magento2 with it's object manager factory, so every new dynamic class request will go through it
 and it will be created by Magento before phpspec tries to use it
