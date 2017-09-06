@@ -10,11 +10,20 @@ composer config repositories.nagno git https://github.com/nagno/phpspec-bootstra
 
 Install the package:
 ```sh
-composer require nagno/phpspec-bootstrap-magento2:~1.0 --dev
+composer require nagno/phpspec-bootstrap-magento2 --dev
 ```
 
 Add these lines to phpspec.yml:
 ```yml
 extensions:
-    - Nagno\Phpspec\BootstrapMagento2\Bootstrap
+    Nagno\Phpspec\BootstrapMagento2\Bootstrap: ~
 ```
+
+# Compatibilty with PhpSpec
+
+This tool is compatible with PhpSpec 2 and 4. 
+
+| PhpSpec Version   | Bootstrap Magento2 Version |
+|-------------------|----------------------------|
+| 2.x               | 1.x                        |
+| 4.x               | 2.x                        |
