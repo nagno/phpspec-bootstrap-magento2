@@ -1,3 +1,6 @@
+# Compatibility
+This branch is compatible only with Magento 2.0 and 2.1. If you have newer Magento version, please check the other branches.
+
 # Purpose of the tools
 This tool bootstraps Magento2 with it's object manager factory, so every new dynamic class request will go through it
 and it will be created by Magento before phpspec tries to use it
