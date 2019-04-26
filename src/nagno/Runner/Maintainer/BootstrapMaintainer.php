@@ -32,7 +32,7 @@ class BootstrapMaintainer implements Maintainer
         Specification $context,
         MatcherManager $matchers,
         CollaboratorManager $collaborators
-    ) {
+    ): void {
         $this->bootstrapMage2();
     }
 
@@ -44,7 +44,7 @@ class BootstrapMaintainer implements Maintainer
         Specification $context,
         MatcherManager $matchers,
         CollaboratorManager $collaborators
-    ) {
+    ): void {
     }
 
     /**
