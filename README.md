@@ -1,5 +1,5 @@
 #Compatibility
-You need at least Magento 2.2 to use this version of the tool. 
+You need at least Magento 2.3 to use this version of the tool. 
 
 # Purpose of the tools
 This tool bootstraps Magento2 with it's object manager factory, so every new dynamic class request will go through it
@@ -24,9 +24,10 @@ extensions:
 
 # Compatibilty with PhpSpec
 
-This tool is compatible with PhpSpec 2 and 4. 
+This tool is compatible with PhpSpec 2, 4 and 5. 
 
 | PhpSpec Version   | Bootstrap Magento2 Version |
 |-------------------|----------------------------|
 | 2.x               | 1.x                        |
 | 4.x               | 2.x                        |
+| 5.x               | 3.x                        |
