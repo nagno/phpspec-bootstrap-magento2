@@ -1,4 +1,4 @@
-#Compatibility
+# Compatibility
 You need at least Magento 2.3 to use this version of the tool. 
 
 # Purpose of the tools
@@ -24,10 +24,11 @@ extensions:
 
 # Compatibilty with PhpSpec
 
-This tool is compatible with PhpSpec 2, 4 and 5. 
+This tool is compatible with PhpSpec 2, 4, 5 and 6.
 
 | PhpSpec Version   | Bootstrap Magento2 Version |
 |-------------------|----------------------------|
 | 2.x               | 1.x                        |
 | 4.x               | 2.x                        |
 | 5.x               | 3.x                        |
+| 6.x               | 3.x                        |
